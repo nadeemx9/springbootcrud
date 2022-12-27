@@ -34,7 +34,7 @@ public class EmployeeController {
     @PostMapping("/processEmployee")
     public String processEmployee(Employee employee) {
 
-        System.out.println(employee);
+//        System.out.println(employee);
          employeeRepository.save(employee);
 
         return "redirect:employee-list";
